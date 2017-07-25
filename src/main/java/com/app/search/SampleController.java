@@ -1,4 +1,4 @@
-package com.rabbitmq.example1;
+package com.app.search;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.Gson;
-import com.rabbitmq.example1.domain.ProgrammingLangDTO;
+import com.app.search.domain.ProgrammingLangDTO;
 
 @Controller
 public class SampleController {

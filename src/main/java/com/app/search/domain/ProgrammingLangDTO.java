@@ -1,4 +1,4 @@
-package com.rabbitmq.example1.domain;
+package com.app.search.domain;
 
 import java.util.Objects;
 

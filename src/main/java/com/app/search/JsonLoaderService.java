@@ -1,4 +1,4 @@
-package com.rabbitmq.example1;
+package com.app.search;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.rabbitmq.example1.domain.ProgrammingLangDTO;
+import com.app.search.domain.ProgrammingLangDTO;
 
 /**
  * Created by Artem Karpov

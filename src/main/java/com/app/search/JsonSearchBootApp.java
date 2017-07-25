@@ -1,4 +1,4 @@
-package com.rabbitmq.example1;
+package com.app.search;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
