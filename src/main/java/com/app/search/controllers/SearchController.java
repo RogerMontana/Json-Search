@@ -1,10 +1,11 @@
-package com.app.search;
+package com.app.search.controllers;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import com.app.search.services.JsonLoaderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +17,7 @@ import com.google.gson.Gson;
 import com.app.search.domain.ProgrammingLangDTO;
 
 @Controller
-public class SampleController {
+public class SearchController {
 
 	@Autowired
 	private JsonLoaderService service;
@@ -36,7 +37,7 @@ public class SampleController {
 
 	private Stream<ProgrammingLangDTO> getListByCriteria(String query) {
 		return service.getDataAsStream()
-					.filter(programmingLangDTO -> programmingLangDTO.getName().contains(query)
+					.filter(programmingLangDTO -> Arrays.asList(programmingLangDTO.getName().split(regex)).contains(query)
 							|| Arrays.asList(programmingLangDTO.getDesignedBy().split(regex)).contains(query)
 							|| Arrays.asList(programmingLangDTO.getType().split(regex)).contains(query));
 	}

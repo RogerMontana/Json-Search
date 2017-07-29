@@ -1,4 +1,4 @@
-package com.app.search;
+package com.app.search.services;
 
 import java.io.File;
 import java.io.IOException;
